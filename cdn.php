@@ -97,7 +97,7 @@ if( defined( 'CDN_DOMAIN' ) ) {
     } );
 
     $add_version_to_url = function( $url ) {
-        return add_query_arg( 'ver', get_option( 'cdn-assets-version', '1.0' ), $url );
+        return add_query_arg( 'ver', get_option( 'cdn-assets-ver', '1.0' ), $url );
     };
 
     add_filter( 'script_loader_src', $add_version_to_url );
